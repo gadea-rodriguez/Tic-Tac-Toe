@@ -42,16 +42,16 @@ python Tic-Tac-Toe.py
 ### Functions
 #### draw_playboard
 This function draws the playboard with the grid and the white backgroung
-'''python
+```python
 def draw_playboard():
     playboard.fill(white)
     for i in range(1,3):
         pygame.draw.line(playboard, black, (0,i*100), (300, i*100),2)
         pygame.draw.line(playboard, black, (i*100,0), (i*100, 300),2)
-'''
+```
 #### draw_player
 This function draws each player's marks (X in red and O in blue) based on who is playing
-'''python
+```python
 def draw_player():
     for i in range(9):
         x= (i % 3) * 100 + 50
@@ -63,19 +63,19 @@ def draw_player():
         #if player 2 (o) is in the position, we drawa circle
         elif positions[i]== "O":
             pygame.draw.circle(playboard, blue , (x,y), 25, 2)
-'''
+```
 
 #### move
 This function updates the positions list with the players move with X/O depending on who is playing
-'''python
+```python
 def move (pos, player):
     position_board = positions.index(pos)
     positions[position_board]=player
-'''
+```
 
 #### winner
 This function checks if someone has won yet by checking if any of the winning combinations is filled with one player's marks
-'''python
+```python
 def winner ():
     win=""
     line = []
@@ -87,20 +87,20 @@ def winner ():
             win = "O"
             line=i
     return win, line
-'''
+```
 #### draw_winning_line
 This function draws a line over the winning combinartion if any player wins
-'''python
+```python
 def draw_winning_line (line):
     if line:
         start_position = ((line[0]%3)*100 + 50, (line[0]//3)*100 + 50)
         end_position = ((line[2]%3)*100 + 50,(line[2]//3)*100 + 50)
         pygame.draw.line(playboard, purple , start_position, end_position, 5)
-'''
+```
 
 #### game_over_msg
 This function shows a game over mesage on the playboard if no player has won and all the spots in the grid are filled
-'''python
+```python
 def game_over_msg (message):
     font = pygame.font.Font(None, 72)
     text = font.render(message, True, white)
@@ -108,10 +108,10 @@ def game_over_msg (message):
     rectangle = text.get_rect(center=(playboard_size[0]//2, playboard_size[1]//2))
     pygame.draw.rect(playboard,black, rectangle.inflate(22,22))
     playboard.blit(text, rectangle)
-'''
+```
 ### Main Game
 This part of the code handles the logic that the game follows, calling all the functions and making them work together
-'''python
+```python
 game_over = False
 #The game starts with player 1
 player_1 = True
@@ -159,7 +159,7 @@ else:
 pygame.display.update()
 pygame.time.wait(3000)       
 pygame.quit()
-'''
+```
 
 ##License
 This project is licensed under the MIT license
