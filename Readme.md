@@ -1,6 +1,6 @@
-#Tic-Tac-Toe
+# Tic-Tac-Toe
 This is a simple game of Tic-Tac-Toe programed in python with the extension of Pygame
-##Contents
+## Contents
 - [Introduction](#introduction)
 - [Pre-requisites](#pre-requisites)
 - [Installation](#isntallation)
@@ -16,10 +16,10 @@ This is a simple game of Tic-Tac-Toe programed in python with the extension of P
     - [Main Game](#main_game)
 - [License](#license)
 
-##Introduction
+## Introduction
 Tic-Tac-Toe is a game that consists of 2 players, X and O. They take turns marking the spaces in a 3x3 grid. If one player can place 3 consecutive marks in any orientation, they win. If no one succeeds, the game is over.
 
-##Pre-requisites
+## Pre-requisites
 
 - Python 3.x
 - Pygame
@@ -27,9 +27,13 @@ Tic-Tac-Toe is a game that consists of 2 players, X and O. They take turns marki
 ## Installation
 1. Clone the repository:
 
-git@github.com:gadea-rodriguez/Tic-Tac-Toe.git
-
+```sh
+git clone git@github.com:gadea-rodriguez/Tic-Tac-Toe.git
+```
 2. Install Requirements:
+```sh
+pip install pygame
+```
 
 ## Usage
 1. Run the game:
@@ -161,5 +165,5 @@ pygame.time.wait(3000)
 pygame.quit()
 ```
 
-##License
+## License
 This project is licensed under the MIT license
