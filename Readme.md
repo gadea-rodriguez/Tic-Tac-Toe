@@ -27,13 +27,15 @@ Tic-Tac-Toe is a game that consists of 2 players, X and O. They take turns marki
 ## Installation
 1. Clone the repository:
 
+git@github.com:gadea-rodriguez/Tic-Tac-Toe.git
+
 2. Install Requirements:
 
 ## Usage
 1. Run the game:
-'''sh
+´´´sh
 python Tic-Tac-Toe.py
-'''
+´´´
 2. Start playing the game by clicking on the empty spaces
 
 ## Code Explanation
