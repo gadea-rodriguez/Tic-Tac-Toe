@@ -33,9 +33,9 @@ git@github.com:gadea-rodriguez/Tic-Tac-Toe.git
 
 ## Usage
 1. Run the game:
-´´´sh
+```sh
 python Tic-Tac-Toe.py
-´´´
+```
 2. Start playing the game by clicking on the empty spaces
 
 ## Code Explanation
